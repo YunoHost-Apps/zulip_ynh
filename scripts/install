@@ -54,7 +54,7 @@ yunohost service add $app --description="Modern team chat" --log="/var/log/$app/
 ynh_script_progression --message="Setup $app..." --weight=1
 
 pushd $install_dir
-	./scripts/setup/install --postgresql-version=13 --postgresql-missing-dictionaries --certbot --email=$email --hostname=$domain #--no-init-db
+	./scripts/setup/install --postgresql-missing-dictionaries --certbot --email=$email --hostname=$domain #--no-init-db --postgresql-version=13 
 popd
 
 #=================================================
