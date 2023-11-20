@@ -29,6 +29,7 @@ Zulip is an open-source team collaboration tool with unique topic-based threadin
 * Official app website: <https://zulip.com/>
 * Official admin documentation: <https://zulip.readthedocs.io/>
 * Upstream app code repository: <https://github.com/zulip/zulip>
+* YunoHost Store: <https://apps.yunohost.org/app/zulip>
 * Report a bug: <https://github.com/YunoHost-Apps/zulip_ynh/issues>
 
 ## Developer info

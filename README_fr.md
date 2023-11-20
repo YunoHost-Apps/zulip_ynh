@@ -29,6 +29,7 @@ Zulip est un outil de collaboration d'équipe open source avec un fil de discuss
 * Site officiel de l’app : <https://zulip.com/>
 * Documentation officielle de l’admin : <https://zulip.readthedocs.io/>
 * Dépôt de code officiel de l’app : <https://github.com/zulip/zulip>
+* YunoHost Store: <https://apps.yunohost.org/app/zulip>
 * Signaler un bug : <https://github.com/YunoHost-Apps/zulip_ynh/issues>
 
 ## Informations pour les développeurs
