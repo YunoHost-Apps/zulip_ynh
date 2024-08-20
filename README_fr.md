@@ -5,7 +5,7 @@ Il NE doit PAS être modifié à la main.
 
 # Zulip pour YunoHost
 
-[![Niveau d’intégration](https://dash.yunohost.org/integration/zulip.svg)](https://dash.yunohost.org/appci/app/zulip) ![Statut du fonctionnement](https://ci-apps.yunohost.org/ci/badges/zulip.status.svg) ![Statut de maintenance](https://ci-apps.yunohost.org/ci/badges/zulip.maintain.svg)
+[![Niveau d’intégration](https://dash.yunohost.org/integration/zulip.svg)](https://ci-apps.yunohost.org/ci/apps/zulip/) ![Statut du fonctionnement](https://ci-apps.yunohost.org/ci/badges/zulip.status.svg) ![Statut de maintenance](https://ci-apps.yunohost.org/ci/badges/zulip.maintain.svg)
 
 [![Installer Zulip avec YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=zulip)
 
@@ -18,7 +18,7 @@ Il NE doit PAS être modifié à la main.
 
 Zulip est un outil de collaboration d'équipe open source avec un fil de discussion thématique unique qui combine le meilleur du courrier électronique et du chat pour rendre le travail à distance productif et agréable. Zulip est la seule application de chat d'équipe moderne conçue pour les conversations en direct et asynchrones.
 
-**Version incluse :** 8.4~ynh1
+**Version incluse :** 9.1~ynh1
 
 ## Captures d’écran
 

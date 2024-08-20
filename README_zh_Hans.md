@@ -5,7 +5,7 @@
 
 # YunoHost 上的 Zulip
 
-[![集成程度](https://dash.yunohost.org/integration/zulip.svg)](https://dash.yunohost.org/appci/app/zulip) ![工作状态](https://ci-apps.yunohost.org/ci/badges/zulip.status.svg) ![维护状态](https://ci-apps.yunohost.org/ci/badges/zulip.maintain.svg)
+[![集成程度](https://dash.yunohost.org/integration/zulip.svg)](https://ci-apps.yunohost.org/ci/apps/zulip/) ![工作状态](https://ci-apps.yunohost.org/ci/badges/zulip.status.svg) ![维护状态](https://ci-apps.yunohost.org/ci/badges/zulip.maintain.svg)
 
 [![使用 YunoHost 安装 Zulip](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=zulip)
 
@@ -18,7 +18,7 @@
 
 Zulip is an open-source team collaboration tool with unique topic-based threading that combines the best of email and chat to make remote work productive and delightful. Zulip is the only modern team chat app that is designed for both live and asynchronous conversations.
 
-**分发版本：** 8.4~ynh1
+**分发版本：** 9.1~ynh1
 
 ## 截图
 
