@@ -22,7 +22,7 @@ Zulip is an open-source team collaboration tool with unique topic-based threadin
 
 ## Снимки экрана
 
-![Снимок экрана Zulip](./doc/screenshots/example.jpg)
+![Снимок экрана Zulip](./doc/screenshots/screenshot.webp)
 
 ## Документация и ресурсы
 

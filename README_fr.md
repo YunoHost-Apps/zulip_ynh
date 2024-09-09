@@ -22,7 +22,7 @@ Zulip est un outil de collaboration d'équipe open source avec un fil de discuss
 
 ## Captures d’écran
 
-![Capture d’écran de Zulip](./doc/screenshots/example.jpg)
+![Capture d’écran de Zulip](./doc/screenshots/screenshot.webp)
 
 ## Documentations et ressources
 
