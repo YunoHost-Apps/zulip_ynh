@@ -24,16 +24,14 @@ ynh_config_add_systemd
 yunohost service add $app --description="Modern team chat" --log="/var/log/$app/$app.log"
 
 #=================================================
-# APP INITIAL CONFIGURATION
-#=================================================
 # ADD A CONFIGURATION
 #=================================================
 #ynh_script_progression "Adding $app's configuration..."
 
 #ynh_config_add --template="some_config_file" --destination="$install_dir/some_config_file"
 
-##REMOVEME? Assuming the file is setup using ynh_config_add, the proper chmod/chowns are now already applied and it shouldn't be necessary to tweak perms | chmod 400 "$install_dir/some_config_file"
-##REMOVEME? Assuming the file is setup using ynh_config_add, the proper chmod/chowns are now already applied and it shouldn't be necessary to tweak perms | chown $app:$app "$install_dir/some_config_file"
+#chmod 400 "$install_dir/some_config_file"
+#chown $app:$app "$install_dir/some_config_file"
 
 #=================================================
 # ADD A CONFIGURATION
@@ -45,7 +43,7 @@ ynh_script_progression "Setup $app..."
 #popd
 
 pushd $install_dir
-	./scripts/setup/install --hostname=$domain --email=$email --no-init-db #--cacert="/etc/yunohost/certs/$domain/crt.pem" --certbot
+	./scripts/setup/install --hostname=$domain --email=$email --no-init-db #--cacert="/etc/yunohost/certs/$domain/crt.pem" --certbot --self-signed-cert
 popd
 
 #=================================================
