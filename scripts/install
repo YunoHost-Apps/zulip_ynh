@@ -40,13 +40,13 @@ yunohost service add $app --description="Modern team chat" --log="/var/log/$app/
 #=================================================
 ynh_script_progression "Setup $app..."
 
-pushd $install_dir
-	./scripts/setup/install --postgresql-missing-dictionaries --email=$email --hostname=$domain --postgresql-version=13 --cacert="/etc/yunohost/certs/$domain/crt.pem" #--no-init-db --certbot
-popd
-
 #pushd $install_dir
-#	./scripts/setup/install --hostname=$domain --email=$email --no-init-db #--cacert="/etc/yunohost/certs/$domain/crt.pem" #--no-init-db --certbot
+#	./scripts/setup/install --postgresql-missing-dictionaries --email=$email --hostname=$domain --postgresql-version=13 --cacert="/etc/yunohost/certs/$domain/crt.pem" #--no-init-db --certbot
 #popd
+
+pushd $install_dir
+	./scripts/setup/install --hostname=$domain --email=$email --no-init-db #--cacert="/etc/yunohost/certs/$domain/crt.pem" --certbot
+popd
 
 #=================================================
 # START SYSTEMD SERVICE
