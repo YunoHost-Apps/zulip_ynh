@@ -43,7 +43,7 @@ ynh_script_progression "Setup $app..."
 #popd
 
 pushd $install_dir
-	./scripts/setup/install --hostname=$domain --email=$email --no-init-db #--cacert="/etc/yunohost/certs/$domain/crt.pem" --certbot --self-signed-cert
+	./scripts/setup/install --hostname=$domain --email=$email --no-init-db --self-signed-cert #--cacert="/etc/yunohost/certs/$domain/crt.pem" --certbot --self-signed-cert
 popd
 
 #=================================================
