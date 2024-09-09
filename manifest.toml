@@ -16,7 +16,7 @@ admindoc = "https://zulip.readthedocs.io/"
 code = "https://github.com/zulip/zulip"
 
 [integration]
-yunohost = ">= 11.2"
+yunohost = ">= 12.0.0"
 architectures = "all"
 multi_instance = true
 
