@@ -30,9 +30,6 @@ yunohost service add $app --description="Modern team chat" --log="/var/log/$app/
 
 #ynh_config_add --template="zulip-secrets.conf" --destination="etc/zulip/zulip-secrets.conf"
 
-#chmod 400 "etc/zulip/zulip-secrets.conf"
-#chown $app:$app "etc/zulip/zulip-secrets.conf"
-
 #=================================================
 # ADD A CONFIGURATION
 #=================================================
@@ -52,4 +49,5 @@ ynh_systemctl --service=$app --action="start" --log_path="systemd"
 #=================================================
 # END OF SCRIPT
 #=================================================
+
 ynh_script_progression "Installation of $app completed"
