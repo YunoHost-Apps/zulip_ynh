@@ -5,7 +5,7 @@ name = "Zulip"
 description.en = "Chat that helps teams stay productive and focused"
 description.fr = "Chat qui aide les équipes à rester productives et concentrées"
 
-version = "9.2~ynh1"
+version = "9.4~ynh1"
 
 maintainers = ["eric_G"]
 
@@ -16,7 +16,7 @@ admindoc = "https://zulip.readthedocs.io/"
 code = "https://github.com/zulip/zulip"
 
 [integration]
-yunohost = ">= 12.0.0"
+yunohost = ">= 12.0.9.2"
 helpers_version = "2.1"
 architectures = "all"
 multi_instance = true
@@ -45,8 +45,8 @@ ram.runtime = "50M"
     [resources.sources]
 
         [resources.sources.main]
-        url = "https://github.com/zulip/zulip/releases/download/9.2/zulip-server-9.2.tar.gz"
-        sha256 = "47fdd784c2c2b93cb14d425499990f1f3c773f91f768de873d890217d60b01aa"
+        url = "https://github.com/zulip/zulip/releases/download/9.4/zulip-server-9.4.tar.gz"
+        sha256 = "bd19a7411ecd526c7c63c60a879c48ddd836d19ae0fbc7018a7d459496889774"
         autoupdate.strategy = "latest_github_tag"
 
     [resources.system_user]
