@@ -5,7 +5,9 @@ EZ editatu eskuz.
 
 # Zulip YunoHost-erako
 
-[![Integrazio maila](https://dash.yunohost.org/integration/zulip.svg)](https://ci-apps.yunohost.org/ci/apps/zulip/) ![Funtzionamendu egoera](https://ci-apps.yunohost.org/ci/badges/zulip.status.svg) ![Mantentze egoera](https://ci-apps.yunohost.org/ci/badges/zulip.maintain.svg)
+[![Integrazio maila](https://apps.yunohost.org/badge/integration/zulip)](https://ci-apps.yunohost.org/ci/apps/zulip/)
+![Funtzionamendu egoera](https://apps.yunohost.org/badge/state/zulip)
+![Mantentze egoera](https://apps.yunohost.org/badge/maintained/zulip)
 
 [![Instalatu Zulip YunoHost-ekin](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=zulip)
 

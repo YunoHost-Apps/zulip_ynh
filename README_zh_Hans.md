@@ -5,7 +5,9 @@
 
 # YunoHost 上的 Zulip
 
-[![集成程度](https://dash.yunohost.org/integration/zulip.svg)](https://ci-apps.yunohost.org/ci/apps/zulip/) ![工作状态](https://ci-apps.yunohost.org/ci/badges/zulip.status.svg) ![维护状态](https://ci-apps.yunohost.org/ci/badges/zulip.maintain.svg)
+[![集成程度](https://apps.yunohost.org/badge/integration/zulip)](https://ci-apps.yunohost.org/ci/apps/zulip/)
+![工作状态](https://apps.yunohost.org/badge/state/zulip)
+![维护状态](https://apps.yunohost.org/badge/maintained/zulip)
 
 [![使用 YunoHost 安装 Zulip](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=zulip)
 

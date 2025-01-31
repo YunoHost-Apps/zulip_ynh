@@ -5,7 +5,9 @@ It shall NOT be edited by hand.
 
 # Zulip for YunoHost
 
-[![Integration level](https://dash.yunohost.org/integration/zulip.svg)](https://ci-apps.yunohost.org/ci/apps/zulip/) ![Working status](https://ci-apps.yunohost.org/ci/badges/zulip.status.svg) ![Maintenance status](https://ci-apps.yunohost.org/ci/badges/zulip.maintain.svg)
+[![Integration level](https://apps.yunohost.org/badge/integration/zulip)](https://ci-apps.yunohost.org/ci/apps/zulip/)
+![Working status](https://apps.yunohost.org/badge/state/zulip)
+![Maintenance status](https://apps.yunohost.org/badge/maintained/zulip)
 
 [![Install Zulip with YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=zulip)
 

@@ -5,7 +5,9 @@
 
 # Zulip для YunoHost
 
-[![Уровень интеграции](https://dash.yunohost.org/integration/zulip.svg)](https://ci-apps.yunohost.org/ci/apps/zulip/) ![Состояние работы](https://ci-apps.yunohost.org/ci/badges/zulip.status.svg) ![Состояние сопровождения](https://ci-apps.yunohost.org/ci/badges/zulip.maintain.svg)
+[![Уровень интеграции](https://apps.yunohost.org/badge/integration/zulip)](https://ci-apps.yunohost.org/ci/apps/zulip/)
+![Состояние работы](https://apps.yunohost.org/badge/state/zulip)
+![Состояние сопровождения](https://apps.yunohost.org/badge/maintained/zulip)
 
 [![Установите Zulip с YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=zulip)
 

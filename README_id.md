@@ -5,7 +5,9 @@ Ini TIDAK boleh diedit dengan tangan.
 
 # Zulip untuk YunoHost
 
-[![Tingkat integrasi](https://dash.yunohost.org/integration/zulip.svg)](https://ci-apps.yunohost.org/ci/apps/zulip/) ![Status kerja](https://ci-apps.yunohost.org/ci/badges/zulip.status.svg) ![Status pemeliharaan](https://ci-apps.yunohost.org/ci/badges/zulip.maintain.svg)
+[![Tingkat integrasi](https://apps.yunohost.org/badge/integration/zulip)](https://ci-apps.yunohost.org/ci/apps/zulip/)
+![Status kerja](https://apps.yunohost.org/badge/state/zulip)
+![Status pemeliharaan](https://apps.yunohost.org/badge/maintained/zulip)
 
 [![Pasang Zulip dengan YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=zulip)
 
