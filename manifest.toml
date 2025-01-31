@@ -5,7 +5,7 @@ name = "Zulip"
 description.en = "Chat that helps teams stay productive and focused"
 description.fr = "Chat qui aide les équipes à rester productives et concentrées"
 
-version = "7.4~ynh1"
+version = "9.4~ynh1"
 
 maintainers = ["eric_G"]
 
@@ -16,11 +16,15 @@ admindoc = "https://zulip.readthedocs.io/"
 code = "https://github.com/zulip/zulip"
 
 [integration]
-yunohost = ">= 11.2"
+yunohost = ">= 12.0.9.2"
+helpers_version = "2.1"
 architectures = "all"
 multi_instance = true
+
 ldap = false
+
 sso = false
+
 disk = "50M"
 ram.build = "50M"
 ram.runtime = "50M"
@@ -41,8 +45,8 @@ ram.runtime = "50M"
     [resources.sources]
 
         [resources.sources.main]
-        url = "https://github.com/zulip/zulip/releases/download/7.4/zulip-server-7.4.tar.gz"
-        sha256 = "604f9eca53e5cc2fd069dad93fa2ec6500a20baaa721fe2e58b6a236473cf780"
+        url = "https://github.com/zulip/zulip/releases/download/9.4/zulip-server-9.4.tar.gz"
+        sha256 = "bd19a7411ecd526c7c63c60a879c48ddd836d19ae0fbc7018a7d459496889774"
         autoupdate.strategy = "latest_github_tag"
 
     [resources.system_user]
@@ -54,8 +58,12 @@ ram.runtime = "50M"
 
     [resources.ports]
 
-    #[resources.apt]
-    #packages = "postgresql"
+    [resources.apt]
+    packages = [
+        "libpq5",
+        "libpq-dev",
+        "postgresql"
+    ]
 
-    #[resources.database]
-    #type = "postgresql"
+    [resources.database]
+    type = "postgresql"
