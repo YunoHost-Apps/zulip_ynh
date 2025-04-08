@@ -20,7 +20,7 @@
 
 Zulip is an open-source team collaboration tool with unique topic-based threading that combines the best of email and chat to make remote work productive and delightful. Zulip is the only modern team chat app that is designed for both live and asynchronous conversations.
 
-**Поставляемая версия:** 9.4~ynh1
+**Поставляемая версия:** 10.1~ynh1
 
 ## Снимки экрана
 
