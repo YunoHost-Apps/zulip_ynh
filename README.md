@@ -4,7 +4,7 @@ It shall NOT be edited by hand.
 -->
 
 <h1>
-  <img src="https://raw.githubusercontent.com/YunoHost/apps/master/logos/zulip.png" width="32px" alt="Logo of Zulip">
+  <img src="https://raw.githubusercontent.com/YunoHost/apps/main/logos/zulip.png" width="32px" alt="Logo of Zulip">
   Zulip, packaged for YunoHost
 </h1>
 
