@@ -20,6 +20,14 @@ ynh_backup "/etc/nginx/conf.d/$domain.d/$app.conf"
 ynh_backup "/etc/systemd/system/$app.service"
 
 #=================================================
+# BACKUP THE CERTIFICATES SYMLINKS
+#=================================================
+
+ynh_backup "/etc/ssl/certs/zulip.combined-chain.crt"
+
+ynh_backup "/etc/ssl/certs/zulip.key"
+
+#=================================================
 # BACKUP THE MYSQL DATABASE
 #=================================================
 ynh_print_info "Backing up the MySQL database..."
