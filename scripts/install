@@ -37,7 +37,7 @@ ynh_script_progression "Setup $app..."
 
 # Create symlinks as per https://zulip.readthedocs.io/en/latest/production/ssl-certificates.html#manual-install
 ln -sf "/etc/yunohost/certs/$domain/crt.pem" "/etc/ssl/certs/zulip.combined-chain.crt"
-ln -sf "/etc/yunohost/certs/$domain/key.pem" "/etc/ssl/certs/zulip.key"
+ln -sf "/etc/yunohost/certs/$domain/key.pem" "/etc/ssl/private/zulip.key"
 
 pushd $install_dir
 	./scripts/setup/install --hostname=$domain --email=$email --postgresql-version=15 --postgresql-database-name=$db_name --postgresql-database-user=$db_user --postgresql-missing-dictionaries --no-dist-upgrade --no-submit-usage-statistics --push-notifications --agree-to-terms-of-service

@@ -25,7 +25,7 @@ ynh_backup "/etc/systemd/system/$app.service"
 
 ynh_backup "/etc/ssl/certs/zulip.combined-chain.crt"
 
-ynh_backup "/etc/ssl/certs/zulip.key"
+ynh_backup "/etc/ssl/private/zulip.key"
 
 #=================================================
 # BACKUP THE MYSQL DATABASE

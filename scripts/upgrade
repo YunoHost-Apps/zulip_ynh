@@ -35,7 +35,7 @@ ynh_script_progression "Updating configuration..."
 
 # Create symlinks as per https://zulip.readthedocs.io/en/latest/production/ssl-certificates.html#manual-install
 ln -sf "/etc/yunohost/certs/$domain/crt.pem" "/etc/ssl/certs/zulip.combined-chain.crt"
-ln -sf "/etc/yunohost/certs/$domain/key.pem" "/etc/ssl/certs/zulip.key"
+ln -sf "/etc/yunohost/certs/$domain/key.pem" "/etc/ssl/private/zulip.key"
 
 #=================================================
 # START SYSTEMD SERVICE
