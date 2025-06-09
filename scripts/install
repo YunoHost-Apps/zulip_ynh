@@ -40,7 +40,7 @@ ln -sf "/etc/yunohost/certs/$domain/crt.pem" "/etc/ssl/certs/zulip.combined-chai
 ln -sf "/etc/yunohost/certs/$domain/key.pem" "/etc/ssl/certs/zulip.key"
 
 pushd $install_dir
-	./scripts/setup/install --postgresql-version=15 --postgresql-database-name=$db_name --postgresql-database-user=$db_user --postgresql-missing-dictionaries --no-dist-upgrade --no-submit-usage-statistics --push-notifications --agree-to-terms-of-service
+	./scripts/setup/install --hostname=$domain --email=$email --postgresql-version=15 --postgresql-database-name=$db_name --postgresql-database-user=$db_user --postgresql-missing-dictionaries --no-dist-upgrade --no-submit-usage-statistics --push-notifications --agree-to-terms-of-service
 popd
 
 #=================================================
