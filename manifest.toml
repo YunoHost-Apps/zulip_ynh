@@ -5,7 +5,7 @@ name = "Zulip"
 description.en = "Chat that helps teams stay productive and focused"
 description.fr = "Chat qui aide les équipes à rester productives et concentrées"
 
-version = "10.3~ynh1"
+version = "11.0~ynh1"
 
 maintainers = ["eric_G"]
 
@@ -44,8 +44,8 @@ ram.runtime = "50M"
     [resources.sources]
 
         [resources.sources.main]
-        url = "https://github.com/zulip/zulip/releases/download/10.3/zulip-server-10.3.tar.gz"
-        sha256 = "71e8239a92f42587aa7e2b4b1092e0b9359c74edc17df8a2de00b6b43482560c"
+        url = "https://github.com/zulip/zulip/releases/download/11.0/zulip-server-11.0.tar.gz"
+        sha256 = "d441c0ed2c94681528356234b12d03a4e6728fb9418f0dad299376305af7891d"
         autoupdate.strategy = "latest_github_tag"
 
     [resources.system_user]
