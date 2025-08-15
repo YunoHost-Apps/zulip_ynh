@@ -18,6 +18,10 @@ Chat that helps teams stay productive and focused
 <a href="https://github.com/YunoHost-Apps/zulip_ynh/issues"><img height="100px" src="https://github.com/YunoHost/yunohost-artwork/raw/refs/heads/main/badges/neopossum-badges/badge_report_an_issue.svg"/></a>
 </div>
 
+
+## Screenshots
+![Screenshot of Zulip](./doc/screenshots/screenshot.webp)
+
 ## 📦 Developer info
 
 [![Automatic tests level](https://apps.yunohost.org/badge/cilevel/zulip)](https://ci-apps.yunohost.org/ci/apps/zulip/)
