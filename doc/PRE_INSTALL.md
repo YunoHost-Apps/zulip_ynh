@@ -1,0 +1,3 @@
+Note that this app is *NOT* in YunoHost catalog! The current implementation revolves around the upstream script that is likely to **mess up the entire system** such as breaking Nginx, in addition to spreading files in /src/zulip, /home/zulip, adding apt repositories and packages without going through YunoHost abstractions, etc ...
+
+🔴 It is ABSOLUTELY DISCOURAGED to even TRY installing this in production! 🔴
