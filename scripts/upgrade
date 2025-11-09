@@ -31,9 +31,11 @@ yunohost service add $app --description="Modern team chat" --log="/var/log/$app/
 #=================================================
 # UPDATE A CONFIG FILE
 #=================================================
-#ynh_script_progression "Updating configuration..."
+ynh_script_progression "Updating configuration..."
 
-#ynh_config_add --template="some_config_file" --destination="$install_dir/some_config_file"
+# Create symlinks as per https://zulip.readthedocs.io/en/latest/production/ssl-certificates.html#manual-install
+ln -sf "/etc/yunohost/certs/$domain/crt.pem" "/etc/ssl/certs/zulip.combined-chain.crt"
+ln -sf "/etc/yunohost/certs/$domain/key.pem" "/etc/ssl/private/zulip.key"
 
 #=================================================
 # START SYSTEMD SERVICE
