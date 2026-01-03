@@ -31,6 +31,8 @@ ram.runtime = "50M"
 [install]
     [install.domain]
     type = "domain"
+    help.en = "The selected domain must have its Let's Encrypt certificate generated."
+    help.fr = "Le domaine sélectionné doit avoir son certificat Let's Encrypt généré."
 
     [install.init_main_permission]
     type = "group"

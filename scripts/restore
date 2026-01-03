@@ -18,6 +18,14 @@ ynh_script_progression "Restoring the MySQL database..."
 ynh_psql_db_shell < ./db.sql
 
 #=================================================
+# RESTORE THE CERTIFICATES SYMLINKS
+#=================================================
+
+ynh_restore "/etc/ssl/certs/zulip.combined-chain.crt"
+
+ynh_restore "/etc/ssl/private/zulip.key"
+
+#=================================================
 # RESTORE SYSTEM CONFIGURATIONS
 #=================================================
 ynh_script_progression "Restoring system configurations related to $app..."
