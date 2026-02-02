@@ -31,9 +31,9 @@ yunohost service add $app --description="Modern team chat" --log="/var/log/$app/
 #=================================================
 # UPDATE A CONFIG FILE
 #=================================================
-#ynh_script_progression "Updating configuration..."
+ynh_script_progression "Updating configuration..."
 
-#ynh_config_add --template="some_config_file" --destination="$install_dir/some_config_file"
+ynh_config_add --template="settings.py" --destination="/etc/zulip/settings.py"
 
 #=================================================
 # START SYSTEMD SERVICE
