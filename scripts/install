@@ -26,9 +26,9 @@ yunohost service add $app --description="Modern team chat" --log="/var/log/$app/
 #=================================================
 # ADD A CONFIGURATION
 #=================================================
-#ynh_script_progression "Adding $app's configuration..."
+ynh_script_progression "Adding $app's configuration..."
 
-#ynh_config_add --template="zulip-secrets.conf" --destination="etc/zulip/zulip-secrets.conf"
+ynh_config_add --template="settings.py" --destination="/etc/zulip/settings.py"
 
 #=================================================
 # ADD A CONFIGURATION
