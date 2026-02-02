@@ -49,11 +49,12 @@ ram.runtime = "50M"
         autoupdate.strategy = "latest_github_tag"
 
     [resources.system_user]
-
+    allow_email = true
+    
     [resources.install_dir]
 
     [resources.data_dir]
-    
+
     [resources.permissions]
     main.url = "/"
 

@@ -74,17 +74,17 @@ EXTERNAL_HOST = "__DOMAIN__"
 ## EMAIL_HOST and EMAIL_HOST_USER are generally required.  If your
 ## SMTP server does not require authentication, leave EMAIL_HOST_USER
 ## commented out.
-# EMAIL_HOST = "smtp.example.com"
-# EMAIL_HOST_USER = ""
+EMAIL_HOST = "localhost"
+EMAIL_HOST_USER = "__APP__"
 
 ## Passwords and secrets are not stored in this file.  The password
 ## for user EMAIL_HOST_USER goes in `/etc/zulip/zulip-secrets.conf`.
 ## In that file, set `email_password`.  For example:
-# email_password = abcd1234
+email_password = __MAIL_PWD__
 
 ## EMAIL_USE_TLS and EMAIL_PORT are required for most SMTP providers.
-# EMAIL_USE_TLS = True
-# EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_PORT = 587
 
 ## The noreply address to be used as the sender for certain generated
 ## emails.  Messages sent to this address could contain sensitive user
@@ -201,7 +201,7 @@ from django_auth_ldap.config import GroupOfNamesType, LDAPGroupQuery, LDAPSearch
 ##
 ## For more details and alternatives, see the documentation linked above.
 AUTH_LDAP_USER_SEARCH = LDAPSearch(
-    "ou=users,dc=example,dc=com", ldap.SCOPE_SUBTREE, "(uid=%(user)s)"
+    "ou=users,dc=yunohost,dc=org", ldap.SCOPE_SUBTREE, "(uid=%(user)s)"
 )
 
 ## Configuration to look up a user's LDAP data given their email address
@@ -225,7 +225,7 @@ AUTH_LDAP_USER_SEARCH = LDAPSearch(
 
 ## AUTH_LDAP_USERNAME_ATTR should be the Zulip username attribute
 ## (defined in AUTH_LDAP_USER_SEARCH).
-# AUTH_LDAP_USERNAME_ATTR = "uid"
+AUTH_LDAP_USERNAME_ATTR = "uid"
 
 ## This map defines how to populate attributes of a Zulip user from LDAP.
 ##
