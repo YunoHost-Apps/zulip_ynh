@@ -36,7 +36,7 @@ ynh_config_add --template="settings.py" --destination="/etc/zulip/settings.py"
 ynh_script_progression "Setup $app..."
 
 pushd $install_dir
-	./scripts/setup/install --hostname=$domain --email=$email --certbot --postgresql-version=15 --postgresql-database-name=$db_name --postgresql-database-user=$db_user --postgresql-missing-dictionaries --no-dist-upgrade --no-submit-usage-statistics --agree-to-terms-of-service #--push-notifications --cacert="/etc/yunohost/certs/$domain/crt.pem"
+	./scripts/setup/install --hostname=$domain --email=$email  #--postgresql-version=15 --postgresql-database-name=$db_name --postgresql-database-user=$db_user --postgresql-missing-dictionaries --no-dist-upgrade --no-submit-usage-statistics --agree-to-terms-of-service #--certbot --push-notifications --cacert="/etc/yunohost/certs/$domain/crt.pem"
 popd
 
 #=================================================
