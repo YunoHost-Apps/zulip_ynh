@@ -16,7 +16,7 @@ admindoc = "https://zulip.readthedocs.io/"
 code = "https://github.com/zulip/zulip"
 
 [integration]
-yunohost = ">= 12.1.38"
+yunohost = ">= 12.1.40"
 helpers_version = "2.1"
 architectures = "all"
 multi_instance = true
@@ -44,8 +44,8 @@ ram.runtime = "50M"
     [resources.sources]
 
         [resources.sources.main]
-        url = "https://github.com/zulip/zulip/releases/download/11.4/zulip-server-11.4.tar.gz"
-        sha256 = "cf3af77a31f9f150d14b4e453de7b9d695078a03c5dfa7d8d551e1664ccc4a61"
+        url = "https://github.com/zulip/zulip/releases/download/12.1/zulip-server-12.1.tar.gz"
+        sha256 = "320a3a4126a1bdd1166d0f716c38f396bf7c9dcba1febcaba26d39b15afff229"
         autoupdate.strategy = "latest_github_tag"
 
     [resources.system_user]
