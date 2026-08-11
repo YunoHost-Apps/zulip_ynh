@@ -9,7 +9,6 @@ Group=__APP__
 WorkingDirectory=__INSTALL_DIR__/
 ExecStart=__INSTALL_DIR__/script
 
-
 # Sandboxing options to harden security
 # Depending on specificities of your service/app, you may need to tweak these
 # .. but this should be a good baseline

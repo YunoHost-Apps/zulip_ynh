@@ -26,9 +26,10 @@ yunohost service add $app --description="Modern team chat" --log="/var/log/$app/
 #=================================================
 # ADD A CONFIGURATION
 #=================================================
-#ynh_script_progression "Adding $app's configuration..."
+ynh_script_progression "Adding $app's configuration..."
 
-#ynh_config_add --template="zulip-secrets.conf" --destination="etc/zulip/zulip-secrets.conf"
+ynh_config_add --template="settings.py" --destination="/etc/zulip/settings.py"
+ynh_config_add --template="zulip-secrets.conf" --destination="/etc/zulip/zulip-secrets.conf"
 
 #=================================================
 # ADD A CONFIGURATION
@@ -36,7 +37,7 @@ yunohost service add $app --description="Modern team chat" --log="/var/log/$app/
 ynh_script_progression "Setup $app..."
 
 pushd $install_dir
-	./scripts/setup/install --hostname=$domain --email=$email --certbot --postgresql-version=15 --postgresql-database-name=$db_name --postgresql-database-user=$db_user --postgresql-missing-dictionaries --no-dist-upgrade --no-submit-usage-statistics --push-notifications --agree-to-terms-of-service #--cacert="/etc/yunohost/certs/$domain/crt.pem"
+	./scripts/setup/install --hostname=$domain --email=$email  #--postgresql-version=15 --postgresql-database-name=$db_name --postgresql-database-user=$db_user --postgresql-missing-dictionaries --no-dist-upgrade --no-submit-usage-statistics --agree-to-terms-of-service #--certbot --push-notifications --cacert="/etc/yunohost/certs/$domain/crt.pem"
 popd
 
 #=================================================
@@ -44,7 +45,7 @@ popd
 #=================================================
 ynh_script_progression "Starting $app's systemd service..."
 
-ynh_systemctl --service=$app --action="start" --log_path="systemd"
+ynh_systemctl --service=$app --action="start"
 
 #=================================================
 # END OF SCRIPT
